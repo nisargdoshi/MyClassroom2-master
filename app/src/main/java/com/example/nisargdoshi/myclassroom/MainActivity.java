@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Intent Home_int = new Intent(getBaseContext(), Login.class);
                     startActivity(Home_int);
+                    Toast.makeText(getBaseContext(),"hi",Toast.LENGTH_LONG);
 
                 }
                 else {
