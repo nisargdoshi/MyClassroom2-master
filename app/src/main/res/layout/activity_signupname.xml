@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signupname"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nisargdoshi.myclassroom.signupname">
+    <TextView
+        android:text="Please enter your first and last name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name_signup_err_msg"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:visibility="invisible"
+        android:layout_below="@+id/tv_signup_name_header"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:text="What's Your Name?"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/tv_signup_name_header"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:layout_marginTop="62dp"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="33dp"
+        android:id="@+id/et_fname_signup_"
+        android:hint="First Name"
+        android:layout_below="@+id/tv_name_signup_err_msg"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_lname_signup"
+        android:layout_marginEnd="12dp"
+        android:hint="Last Name "
+        android:layout_above="@+id/btn_name_signup"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Next"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="43dp"
+        android:id="@+id/btn_name_signup"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_below="@+id/et_fname_signup_"
+        android:layout_alignStart="@+id/tv_name_signup_err_msg"
+        />
+
+</RelativeLayout>

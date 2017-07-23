@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signupemail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nisargdoshi.myclassroom.signupemail">
+
+    <TextView
+        android:text="Enter Your Email Address"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:layout_marginTop="62dp"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_email_signup_header" />
+
+    <TextView
+        android:text="Please enter a valid email address"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:visibility="invisible"
+        android:id="@+id/tv_email_signup_err_msg"
+        android:layout_below="@+id/tv_email_signup_header"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="33dp"
+        android:id="@+id/et_email_signup"
+        android:layout_below="@+id/tv_email_signup_err_msg"
+        android:layout_alignStart="@+id/tv_email_signup_err_msg"
+        android:hint="Email Address"/>
+
+    <Button
+        android:text="Next"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="43dp"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/tv_email_signup_err_msg"
+        android:id="@+id/btn_email_signup"
+        android:onClick="email"/>
+
+
+</RelativeLayout>

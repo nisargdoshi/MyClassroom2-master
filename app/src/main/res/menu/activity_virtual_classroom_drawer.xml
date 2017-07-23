@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/assignments_menu"
+            android:title="Assignments" />
+        <item
+            android:id="@+id/work_menu"
+            android:title="Work pending" />
+        <item
+            android:id="@+id/students"
+            android:title="Students" />
+        <item
+            android:id="@+id/submited_assignments_menu"
+            android:title="Submited Assignments" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/share_jc_menu"
+                android:title="Share joining code" />
+            <item
+                android:id="@+id/help_menu"
+
+                android:title="Help" />
+        </menu>
+    </item>
+
+</menu>
